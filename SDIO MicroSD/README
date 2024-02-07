@@ -1,0 +1,4 @@
+This folder contains all related Lattice IceStick SDIO MicroSD card interface related projects.
+
+I plan to work on speed and functionality tests a lot with this.
+As an example could two smaller MicroSD cards running in parallel be faster and less power hungry than a single large one?
