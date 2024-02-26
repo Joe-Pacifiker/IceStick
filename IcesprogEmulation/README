@@ -1,0 +1,3 @@
+This project will attempt to emulate the icesprog application in order to raise the default MCO for the icesugar-nano Lattice FPGA development board.
+
+If this can be achieved successfully, I may be able to test IceSugar-Nano FPGA designs with a higher clock frequency.
