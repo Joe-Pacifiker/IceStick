@@ -1,0 +1,9 @@
+# Oscillator
+set_io		ref_clk		21
+
+# Off PMOD I/0
+set_io		clk		44
+
+# PMOD Speaker
+set_io		SPEAKER_L	88
+set_io		SPEAKER_R	87
