@@ -12,3 +12,7 @@ I expect to see different results using this raw PCM data from the wav file.
 
 According to my calculations I may need to go through ~20 different sessions of audio playing from the IceStick memory
  since it only has 65,536 bits of BRAM space instead of its documented 128Kb of BRAM.
+
+Based on some quick testing with sox there should not be any meaningful audio data until ~0.16s - 0.24s
+ Given that I only get roughly 0.08s of audio data at a time I will elect to skip the first two sessions of 16 block RAM data
+ This will be the samples after 8192 or samples [8193 -> 12288]
