@@ -1,0 +1,14 @@
+This Python scripting project extracts the PCM data from the GBA Intro wav file.
+
+The next step after the extraction of the PCM data is to initialize IceStick BRAM with this data.
+
+I plan to use 8 bit addressable halfword RAM
+
+After initialization I will send the RAM data to the speaker at 768khz clock frequency
+ since the wav file header is using 48000 samples/second with each sample being 16 bit PCM data.
+
+When I was working with the MP3 file data I misunderstood the fact that it was NOT raw audio data but encrypted.
+I expect to see different results using this raw PCM data from the wav file.
+
+According to my calculations I may need to go through ~20 different sessions of audio playing from the IceStick memory
+ since it only has 65,536 bits of BRAM space instead of its documented 128Kb of BRAM.
