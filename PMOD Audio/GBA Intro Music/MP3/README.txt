@@ -1,0 +1,14 @@
+This project will store all of the bits for the GBA intro music in the 16 blocks of 4Kb RAM available on the IceSugar-Nano FPGA.
+
+In order to fill the memory it will need to processed from a pool of data parsed from python.
+Python does this easily with mp3 files, so use of the below command is necessary:
+
+ 'ffmpeg -i test.wav -acodec mp3 test.mp3'
+
+The provided python script from Scripting/MusicToMem repository folder collects the raw audio data from the mp3 file.
+
+Not all of the audio data will be able to be processed at once since there isn't enough memory on the FPGA.
+My plan is to use the SDIO interface to store data on a microSD card and keep note of various address locations.
+I should be able to do this in a robust format going forward such that all music data can be sent to the same microSD card.
+
+My current microSD card can hold 32GB of data.
