@@ -1,0 +1,2 @@
+This only focuses on getting the 16 bit PCM data samples from wav file to send to
+ a 10 bit DAC just like the nintendo GBA
