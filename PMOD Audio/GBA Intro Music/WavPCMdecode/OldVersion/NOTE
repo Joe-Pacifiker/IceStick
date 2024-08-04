@@ -1,0 +1,7 @@
+This is an older version of the PCM decode project for the GBA intro wav audio file
+
+In this version I was trying to do some complicated quantizing of the PCM values
+ however I discovered that was not the correct way to do it.
+
+I should just take each sample and send it through to a DAC, it would be much easier
+ that way instead of trying to convert PCM to PWM.
